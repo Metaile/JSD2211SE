@@ -8,19 +8,19 @@ import java.io.IOException;
  */
 public class Test1 {
     public static void main(String[] args) {
+
         for (int i = 1; i <= 10; i++) {
-            File file = new File("test"+i+".txt");
-            if(file.exists()){
-                System.out.println("文件已存在");
-            }else {
+            File file = new File("test" + i + ".txt");
+            if (!file.exists()) {
                 try {
                     file.createNewFile();
-                } catch (Exception e) {
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
                 System.out.println("文件已创建");
             }
+            System.out.println("文件已存在");
         }
-
     }
 }
+
