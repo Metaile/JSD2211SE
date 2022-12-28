@@ -23,9 +23,10 @@ public class Test03 {
         for (File sub : subs) {
             FileInputStream fis = new FileInputStream(sub);
             FileOutputStream fos = new FileOutputStream(sub.getName().substring(0, sub.getName().length() - 4) + "_cp.txt");
+            byte[] data=new byte[1024*10];
             int len;
-            while ((len = fis.read()) != -1) {
-                fos.write(len);
+            while ((len = fis.read(data)) != -1) {
+                fos.write(data,0,len);
             }
             fos.close();
             fis.close();
