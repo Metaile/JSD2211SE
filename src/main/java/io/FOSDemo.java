@@ -2,7 +2,7 @@ package io;
 import java.io.FileOutputStream;
 
 /**
- * 文件的输入输出
+ * 文件的输出流--写操作
  */
 public class FOSDemo {
     public static void main(String[] args) throws Exception {
