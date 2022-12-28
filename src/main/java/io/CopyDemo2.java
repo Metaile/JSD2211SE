@@ -4,6 +4,9 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+/**
+ * 文件复制---块读
+ */
 public class CopyDemo2 {
     public static void main(String[] args) throws IOException {
         FileInputStream fis=new FileInputStream("./img.png");
