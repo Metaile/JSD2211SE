@@ -16,12 +16,10 @@ public class Test01 {
         FileInputStream fis = new FileInputStream("test.txt");
         FileOutputStream fos = new FileOutputStream("test_cp.txt");
         int d;
-        long start=System.currentTimeMillis();
         while ((d = fis.read()) != -1) {
             fos.write(d);
         }
-        long end=System.currentTimeMillis();
-        System.out.println("复制完毕!耗时:"+(end-start)+"ms");
+        System.out.println("复制完毕!");
         fis.close();
         fos.close();
     }
