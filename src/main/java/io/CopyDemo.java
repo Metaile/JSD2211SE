@@ -18,7 +18,7 @@ public class CopyDemo {
             fos.write(f);
         }
         long end=System.currentTimeMillis();
-        System.out.println("复制完毕!耗时:" + (end - start));
+        System.out.println("复制完毕!耗时:" + (end - start)+"ms");
         fis.close();
         fos.close();
     }
