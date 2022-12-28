@@ -13,13 +13,13 @@ public class CopyDemo3 {
         BufferedOutputStream bos=new BufferedOutputStream(fos);
         long start=System.currentTimeMillis();
         int len;
-        /*while ((len=bis.read())!=-1) {
+        while ((len=bis.read())!=-1) {
             bos.write(len);
-        }*/
-        byte[] data=new byte[1024*10];
+        }
+        /*byte[] data=new byte[1024*10];
         while ((len=bis.read(data))!=-1){
             bos.write(data,0,len);
-        }
+        }*/
         long end=System.currentTimeMillis();
         System.out.println("over,耗时:"+(end-start)+"ms");
         bos.close();
