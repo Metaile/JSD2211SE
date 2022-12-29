@@ -1,5 +1,9 @@
 package homework.day03;
 
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.util.Scanner;
+
 /**
  * 改错
  *
@@ -11,21 +15,21 @@ package homework.day03;
  *
  */
 public class Test04 {
-    public static void main(String[] args) {
-//        FileInputStream fos = new FileInputStream("pw.txt");
-//		OutputStreamWriter osw = new OutputStreamWriter(fos,"UFT-8");
-//        BufferedWriter bw = new BufferedWriter(osw);
-//        PrintWriter pw = new PrintWriter(bw,true);
-//
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("请开始输入内容");
-//        while(true) {
-//            String str = scanner.nextLine();
-//            if("exit".equals(str)) {
-//                break;
-//            }
-//			pw.println(srt);
-//        }
-//        pw.close();
+    public static void main(String[] args) throws FileNotFoundException {
+        FileOutputStream fos = new FileOutputStream("pw.txt");
+		OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8);
+        BufferedWriter bw = new BufferedWriter(osw);
+        PrintWriter pw = new PrintWriter(bw,true);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("请开始输入内容");
+        while(true) {
+            String str = scanner.nextLine();
+            if("exit".equals(str)) {
+                break;
+            }
+			pw.println(str);
+        }
+        pw.close();
     }
 }

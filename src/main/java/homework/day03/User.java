@@ -1,9 +1,11 @@
 package homework.day03;
 
+import java.io.Serializable;
+
 /**
  * String name,String pwd,String nick,int age
  */
-public class User {
+public class User implements Serializable {
     private String name;
     private String pwd;
     private String nick;
@@ -49,5 +51,15 @@ public class User {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", pwd='" + pwd + '\'' +
+                ", nick='" + nick + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
