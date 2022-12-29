@@ -9,7 +9,7 @@ import java.nio.charset.StandardCharsets;
  */
 public class WriteStringDemo {
     public static void main(String[] args) throws IOException {
-        FileOutputStream fos=new FileOutputStream("./test.txt");
+        FileOutputStream fos=new FileOutputStream("file/test.txt");
         String s="娃哈哈!";
         byte[] data=s.getBytes(StandardCharsets.UTF_8);
         fos.write(data);

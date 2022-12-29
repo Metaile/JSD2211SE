@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
  */
 public class FlushDemo {
     public static void main(String[] args) throws IOException {
-        FileOutputStream fos=new FileOutputStream("t.txt");
+        FileOutputStream fos=new FileOutputStream("file/t.txt");
         BufferedOutputStream bos=new BufferedOutputStream(fos);
         bos.write("哇哈哈哈".getBytes(StandardCharsets.UTF_8));
         bos.flush();

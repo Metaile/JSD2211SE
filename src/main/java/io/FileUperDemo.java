@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class FileUperDemo {
     public static void main(String[] args) throws Exception {
         Scanner scan = new Scanner(System.in);
-        File file = new File("note.txt");
+        File file = new File("file/note.txt");
         FileOutputStream fos = new FileOutputStream(file, true);
         FileInputStream fis = new FileInputStream(file);
         if (!file.exists()) {

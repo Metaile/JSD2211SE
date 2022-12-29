@@ -18,7 +18,7 @@ import java.nio.charset.StandardCharsets;
  */
 public class OSWDemo {
     public static void main(String[] args) throws IOException {
-        FileOutputStream fos=new FileOutputStream("osw.txt");
+        FileOutputStream fos=new FileOutputStream("file/osw.txt");
         OutputStreamWriter osw=new OutputStreamWriter(fos,StandardCharsets.UTF_8);
         osw.write("我们只是大自然的搬运工\n",4,7);
         osw.write("农户山泉有点甜");

@@ -9,7 +9,7 @@ import java.io.ObjectInputStream;
  */
 public class OISDemo {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        FileInputStream fis=new FileInputStream("person.obj");
+        FileInputStream fis=new FileInputStream("file/person.obj");
         ObjectInputStream ois=new ObjectInputStream(fis);
         Person person=(Person) ois.readObject();
         System.out.println(person);

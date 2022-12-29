@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
  */
 public class ISRDmeo {
     public static void main(String[] args) throws IOException {
-        FileInputStream fis = new FileInputStream("osw.txt");
+        FileInputStream fis = new FileInputStream("file/osw.txt");
         InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8);
         int len;
         while ((len = isr.read())!=-1) {

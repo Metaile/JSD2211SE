@@ -15,7 +15,7 @@ public class OOSDemo {
         String gender="好好向上";
         String[] otherInfo={"娃哈哈","真不错","欧耶"};
         Person person=new Person(name,age,gender,otherInfo);
-        FileOutputStream fos=new FileOutputStream("person.obj");
+        FileOutputStream fos=new FileOutputStream("file/person.obj");
         ObjectOutputStream oos=new ObjectOutputStream(fos);
         oos.writeObject(person);
         System.out.println("写入完成");

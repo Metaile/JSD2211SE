@@ -11,7 +11,7 @@ import java.nio.charset.StandardCharsets;
  */
 public class ReadStringDemo {
     public static void main(String[] args) throws IOException {
-        File file=new File("./test.txt");
+        File file=new File("file/test.txt");
         FileInputStream fis=new FileInputStream(file);
         byte[] data=new byte[(int)file.length()];
         fis.read(data);

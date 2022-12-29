@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Test2 {
     public static void main(String[] args) throws IOException {
         Scanner scan=new Scanner(System.in);
-        File file=new File("./note.txt");
+        File file=new File("file/note.txt");
         FileOutputStream fos=new FileOutputStream(file,true);
         System.out.print("--------:");
         String s=scan.nextLine();

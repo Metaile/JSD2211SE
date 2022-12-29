@@ -11,7 +11,7 @@ public class FOSDemo {
         若指定路径下文件不存在时，系统会直接创建文件
         但是文件目录必须存在
         */
-        FileOutputStream fos=new FileOutputStream("./fos.dat");
+        FileOutputStream fos=new FileOutputStream("file/fos.dat");
         for (int i = 0; i < 26; i++) {
             fos.write(65+i);
         }

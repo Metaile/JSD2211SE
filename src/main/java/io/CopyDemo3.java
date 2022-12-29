@@ -7,9 +7,9 @@ import java.io.*;
  */
 public class CopyDemo3 {
     public static void main(String[] args) throws IOException {
-        FileInputStream fis=new FileInputStream("img.png");
+        FileInputStream fis=new FileInputStream("file/img.png");
         BufferedInputStream bis=new BufferedInputStream(fis);
-        FileOutputStream fos=new FileOutputStream("img_cp2.png");
+        FileOutputStream fos=new FileOutputStream("file/img_cp2.png");
         BufferedOutputStream bos=new BufferedOutputStream(fos);
         long start=System.currentTimeMillis();
         int len;

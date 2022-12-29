@@ -9,8 +9,8 @@ import java.io.IOException;
  */
 public class CopyDemo {
     public static void main(String[] args) throws IOException {
-        FileInputStream fis = new FileInputStream("./test.txt");
-        FileOutputStream fos = new FileOutputStream("./test_copy.txt");
+        FileInputStream fis = new FileInputStream("file/test.txt");
+        FileOutputStream fos = new FileOutputStream("file/test_copy.txt");
         //记录每次读取到的字节
         int f;
         long start=System.currentTimeMillis();
