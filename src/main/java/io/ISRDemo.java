@@ -8,7 +8,7 @@ import java.nio.charset.StandardCharsets;
 /**
  * 字符输入流
  */
-public class ISRDmeo {
+public class ISRDemo {
     public static void main(String[] args) throws IOException {
         FileInputStream fis = new FileInputStream("file/osw.txt");
         InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8);
