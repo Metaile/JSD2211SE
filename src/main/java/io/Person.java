@@ -10,7 +10,12 @@ public class Person implements Serializable {
     private String name;
     private int age;
     private String gender;
-    private String [] otherInfo;
+    /*
+    transient 关键字修饰的属性在对象序列化时会被忽略
+    忽略不必要的属性可以达到对象序列化的"瘦身"目的，
+    减少字节量，这样利于网络传输，也利于减少磁盘开销
+    */
+    private transient String[] otherInfo;
 
     public Person() {
     }

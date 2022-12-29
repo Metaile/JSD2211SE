@@ -13,6 +13,7 @@ public class OISDemo {
         ObjectInputStream ois=new ObjectInputStream(fis);
         Person person=(Person) ois.readObject();
         System.out.println(person);
+        System.out.println("读取完成");
         ois.close();
     }
 }
