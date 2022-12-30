@@ -1,5 +1,11 @@
 package homework.day03;
 
+import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
+
 /**
  * 改正下面程序的错误
  *
@@ -13,16 +19,20 @@ package homework.day03;
  *
  */
 public class Test02 {
-//        try {
-//            FileOutputStream fos = new FileOutputStream("testpw.txt");
-//            OutputStreamWriter osw = new OutputStreamWriter(fos,"UFT-8");
-//            BufferedWriter bw = new BufferedWriter(osw);
-//            PrintWriter pw = new PrintWriter(bw);
-//
-//            pw.println("你好!我喜欢java!");
-//            system.out.println("写出完毕!");
-//        }catch(Exception e) {
-//            e.printStackTrace();
-//            System.out.println("出错了!");
-//        }
+    public static void main(String[] args) {
+        try {
+            FileOutputStream fos = new FileOutputStream("testpw.txt");
+            OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8);
+            BufferedWriter bw = new BufferedWriter(osw);
+            PrintWriter pw = new PrintWriter(bw);
+            pw.println("你好!我喜欢java!");
+            System.out.println("写出完毕!");
+            pw.close();
+        }catch(Exception e) {
+            e.printStackTrace();
+            System.out.println("出错了!");
+        }
+
+    }
+
 }
