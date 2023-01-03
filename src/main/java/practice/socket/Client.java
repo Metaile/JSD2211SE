@@ -8,23 +8,19 @@ import java.net.Socket;
  */
 public class Client {
     private Socket socket;
-
-    public Client() {
+    public Client(){
         try {
-            System.out.println("启动");
-            socket = new Socket("localhost", 8088);
-            System.out.println("完成");
+            socket=new Socket("localhost",8088);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
-    public void start() {
+    public void start(){
 
     }
 
     public static void main(String[] args) {
-        Client client = new Client();
+        Client client=new Client();
         client.start();
     }
 }

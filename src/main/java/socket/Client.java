@@ -25,14 +25,14 @@ public class Client {
         Scanner scan = new Scanner(System.in);
         String line;
         try {
-            System.out.print("请将:");
+            System.out.print("请讲:");
             while (!"exit".equals(line = scan.nextLine())) {
                 OutputStream out = socket.getOutputStream();
                 OutputStreamWriter osw = new OutputStreamWriter(out, StandardCharsets.UTF_8);
                 BufferedWriter bw = new BufferedWriter(osw);
                 PrintWriter pw = new PrintWriter(bw, true);
                 pw.println(line);
-                System.out.print("请将:");
+                System.out.print("请讲:");
 //                pw.close();
             }
         } catch (IOException e) {

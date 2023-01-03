@@ -26,7 +26,6 @@ public class Server {
 
     public void start() {
         try {
-            while (true) {
                 Socket socket = serverSocket.accept();
                 InputStream in = socket.getInputStream();
                 InputStreamReader isr = new InputStreamReader(in, StandardCharsets.UTF_8);
@@ -35,8 +34,7 @@ public class Server {
                 while ((line = br.readLine()) != null) {
                     System.out.println("客户端:" + line);
                 }
-//                br.close();
-            }
+
         } catch (IOException e) {
             e.printStackTrace();
         }
